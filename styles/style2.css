@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #22D4FD;
+    --color-amarillo: rgb(252, 191, 73);
+    --color-hover: #272727;
+    --color-azul: rgb(117,170,219);
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+#carouselContainer {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    margin: auto;
+    width: 1100px;
+    height: 500px;
+    text-shadow:
+    0.5px 0 0 #000000,
+    -0.5px 0 0 #000000,
+    0 0.5px 0 #000000,
+    0 -0.5px 0 #000000;
+}
+
+.producto {
+    flex: 0 0 auto;
+    border: 3px solid var(--color-azul);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    scroll-snap-align: start;
+    max-width: 190px;
+}
+.producto h3 {
+    font-family: var(--fuente-krona);
+    color: var(--color-amarillo);
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+.producto a img {
+    border: 3px solid var(--color-amarillo);
+    max-width: 95%;
+    height: 70%;
+}
+.producto button {
+    background-color: var(--color-azul);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: var(--fuente-krona);
+    font-size: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+.producto button:hover {
+    background-color: #1c6ea4;
+    transform: translateY(-2px);
+}
+.producto button:active {
+    transform: translateY(0);
+}
+.producto p {
+    font-weight: 600;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

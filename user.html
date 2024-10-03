@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>Filos Patrios Landing Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style3.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a style="color: rgb(117,170,219);" href="index.html">Home</a>
+            <a style="color: rgb(252, 191, 73);" href="home.html">Destacados</a>
+            <a style="color: rgb(117,170,219); text-decoration: underline;" href="user.html">Cuenta</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="nose"></div>
+
+        <div class="container" id="container">
+
+            <h1>¿Qué desea hacer?</h1>
+
+            <div class="preguntaBtn">
+                <button id="loginBtn">Iniciar Sesión</button>
+                <button id="registerBtn">Registrarse</button>
+            </div>
+    
+            <div id="loginForm">
+                <h2>Iniciar Sesión</h2>
+                <form id="formLogin">
+                    <input type="text" placeholder="Email" id="loginEmail" required>
+                    <input type="password" placeholder="Contraseña" id="loginPassword" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+    
+            <div id="registerForm" class="hidden">
+                <h2>Registrarse</h2>
+                <form id="formRegister">
+                    <input type="text" placeholder="Nombre" id="registerName" required>
+                    <input type="text" placeholder="Email" id="registerEmail" required>
+                    <input type="password" placeholder="Contraseña" id="registerPassword" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+
+        </div>
+        
+        <div class="carousel-favoritos hidden" id="carouselFavoritos"></div>
+        
+        <button id="logoutBtn" class="logout-btn hidden">Log Out</button>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <img src="./assets/visadebit@2x.png">
+            <img src="./assets/mastercard@2x.png">
+            <img src="./assets/mastercard-debit@2x.png">
+            <img src="./assets/maestro@2x.png">
+            <img src="./assets/cabaldebit@2x.png">
+            <img src="./assets/tarjeta-naranja@2x.png">
+            <img src="./assets/2682@2x.png">
+            <img src="./assets/amex@2x.png">        
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
